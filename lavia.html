@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVIA | Mega Services - مشروع LAVIA الفاخر في العين السخنة</title>
+    <meta name="description" content="اكتشف مشروع LAVIA الفاخر من Mega Services - منتجع سكني فاخر في العين السخنة مع إطلالات بحرية خلابة وتصميم معماري فريد">
+    <meta name="keywords" content="LAVIA, العين السخنة, شقق فاخرة, منتجعات, البحر الأحمر, Mega Services">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LAVIA | Mega Services - مشروع LAVIA الفاخر">
+    <meta property="og:description" content="منتجع LAVIA الفاخر في العين السخنة - تجربة سكنية استثنائية على البحر الأحمر">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== VARIABLES ===== */
+        :root {
+            --gold: #D4AF37;
+            --navy: #0A2342;
+            --white: #FFFFFF;
+            --sand: #F5F1E6;
+            --light-gold: #F7E8C6;
+            --dark-navy: #061A2D;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        /* ===== BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background: var(--sand);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .en {
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--navy);
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav-primary {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-primary.scrolled {
+            background: rgba(10, 35, 66, 0.95);
+            box-shadow: var(--shadow-lg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 3rem;
+            width: auto;
+            border-radius: 8px;
+        }
+
+        .logo-text {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-primary.scrolled .nav-link {
+            color: var(--white);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            background: #c19d2f;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+        }
+
+        .language-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .language-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        /* ===== LAVIA HERO SECTION ===== */
+        .lavia-hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.9), rgba(6, 26, 45, 0.8)),
+                        url('https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lavia-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .lavia-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--white);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .lavia-hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .lavia-hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        .lavia-hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .hero-feature i {
+            color: var(--gold);
+            font-size: 1.25rem;
+        }
+
+        /* ===== LAVIA OVERVIEW SECTION ===== */
+        .lavia-overview {
+            background: var(--white);
+        }
+
+        .overview-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .overview-content h2 {
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .overview-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .overview-feature i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .overview-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== LAVIA GALLERY SECTION ===== */
+        .lavia-gallery-section {
+            background: var(--sand);
+        }
+
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .gallery-tab {
+            padding: 1rem 2rem;
+            background: var(--white);
+            border: 2px solid transparent;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            color: var(--navy);
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-tab.active,
+        .gallery-tab:hover {
+            background: var(--gold);
+            color: var(--navy);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-info h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .gallery-info p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.875rem;
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 2rem;
+        }
+
+        .lightbox.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: var(--border-radius);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--white);
+            transform: scale(1.1);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-nav:hover {
+            background: var(--white);
+            transform: scale(1.1);
+        }
+
+        .lightbox-prev {
+            left: 20px;
+        }
+
+        .lightbox-next {
+            right: 20px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Gallery Categories */
+        .gallery-category {
+            display: none;
+        }
+
+        .gallery-category.active {
+            display: block;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== LAVIA UNITS SECTION ===== */
+        .lavia-units {
+            background: var(--white);
+        }
+
+        .units-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .unit-tab {
+            padding: 1rem 2rem;
+            background: var(--sand);
+            border: 2px solid transparent;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .unit-tab.active,
+        .unit-tab:hover {
+            background: var(--gold);
+            color: var(--navy);
+            border-color: var(--gold);
+        }
+
+        .units-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .unit-card {
+            background: var(--sand);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .unit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .unit-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .unit-content {
+            padding: 1.5rem;
+        }
+
+        .unit-type {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .unit-size {
+            color: var(--navy);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .unit-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .unit-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .unit-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--navy);
+            opacity: 0.8;
+            font-size: 0.875rem;
+        }
+
+        /* ===== LAVIA AMENITIES SECTION ===== */
+        .lavia-amenities {
+            background: var(--sand);
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .amenity-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .amenity-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .amenity-title {
+            font-size: 1.25rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .amenity-description {
+            color: var(--navy);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        /* ===== LAVIA LOCATION SECTION ===== */
+        .lavia-location {
+            background: var(--white);
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            font-size: 2rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .location-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .location-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .location-feature i {
+            color: var(--gold);
+            font-size: 1.25rem;
+        }
+
+        .location-map {
+            height: 400px;
+            background: var(--sand);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+        }
+
+        .map-placeholder {
+            text-align: center;
+            color: var(--navy);
+        }
+
+        .map-placeholder i {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        /* ===== LAVIA CONTACT SECTION ===== */
+        .lavia-contact {
+            background: linear-gradient(135deg, var(--navy), var(--dark-navy));
+            color: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-detail i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            color: var(--white);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .lavia-hero-title {
+                font-size: 3rem;
+            }
+            
+            .overview-container,
+            .location-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .lavia-hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .lavia-hero-subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .lavia-hero-features {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .gallery-tabs,
+            .units-tabs {
+                gap: 0.5rem;
+            }
+            
+            .gallery-tab,
+            .unit-tab {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.875rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+            
+            .units-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+            
+            .lightbox-prev {
+                left: 10px;
+            }
+            
+            .lightbox-next {
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-tabs,
+            .units-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .gallery-tab,
+            .unit-tab {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
+            
+            .unit-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-3 {
+            gap: 0.75rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        /* ===== LANGUAGE TOGGLE STYLES ===== */
+        .lang-ar {
+            display: block;
+        }
+
+        .lang-en {
+            display: none;
+        }
+
+        body.en .lang-ar {
+            display: none;
+        }
+
+        body.en .lang-en {
+            display: block;
+        }
+
+        body.en {
+            direction: ltr;
+        }
+
+        body.en .lavia-hero-content,
+        body.en .section-header {
+            text-align: left;
+        }
+
+        body.en .lavia-hero-features {
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-primary">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://i.ibb.co/67c2rfPJ/IMG-20251023-WA0002.jpg" 
+                         alt="Mega Services" 
+                         class="logo-img">
+                    <div class="logo-text">MEGA SERVICES</div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">
+                        <span class="lang-ar">الرئيسية</span>
+                        <span class="lang-en">Home</span>
+                    </a>
+                    <a href="index.html#projects" class="nav-link">
+                        <span class="lang-ar">مشاريعنا</span>
+                        <span class="lang-en">Our Projects</span>
+                    </a>
+                    <a href="#lavia-hero" class="nav-link">
+                        <span class="lang-ar">LAVIA</span>
+                        <span class="lang-en">LAVIA</span>
+                    </a>
+                    <a href="index.html#services" class="nav-link">
+                        <span class="lang-ar">خدماتنا</span>
+                        <span class="lang-en">Services</span>
+                    </a>
+                    <a href="index.html#concierge" class="nav-link">
+                        <span class="lang-ar">الكونسيرج</span>
+                        <span class="lang-en">Concierge</span>
+                    </a>
+                    <a href="index.html#contact" class="nav-link">
+                        <span class="lang-ar">اتصل بنا</span>
+                        <span class="lang-en">Contact</span>
+                    </a>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('lavia-contact')">
+                        <span class="lang-ar">احجز وحدة</span>
+                        <span class="lang-en">Book a Unit</span>
+                    </button>
+                    <button class="language-toggle" id="languageToggle">
+                        <span class="lang-ar">EN</span>
+                        <span class="lang-en">AR</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LAVIA Hero Section -->
+    <section id="lavia-hero" class="lavia-hero">
+        <div class="container">
+            <div class="lavia-hero-content">
+                <h1 class="lavia-hero-title">LAVIA</h1>
+                <p class="lavia-hero-subtitle">
+                    <span class="lang-ar">منتجع سكني فاخر في العين السخنة - حيث تلتقي الفخامة بالطبيعة</span>
+                    <span class="lang-en">Luxury residential resort in Ain Sokhna - where luxury meets nature</span>
+                </p>
+                
+                <div class="lavia-hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-swimming-pool"></i>
+                        <span class="lang-ar">مسابح فاخرة</span>
+                        <span class="lang-en">Luxury Pools</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span class="lang-ar">شاطئ خاص</span>
+                        <span class="lang-en">Private Beach</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span class="lang-ar">خدمات فندقية</span>
+                        <span class="lang-en">Hotel Services</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-eye"></i>
+                        <span class="lang-ar">إطلالة بحرية</span>
+                        <span class="lang-en">Sea View</span>
+                    </div>
+                </div>
+
+                <div class="lavia-hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('lavia-units')">
+                        <span class="lang-ar">عرض الوحدات</span>
+                        <span class="lang-en">View Units</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('lavia-gallery')">
+                        <span class="lang-ar">معرض الصور</span>
+                        <span class="lang-en">Photo Gallery</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Overview Section -->
+    <section id="lavia-overview" class="section lavia-overview">
+        <div class="container">
+            <div class="overview-container">
+                <div class="overview-content">
+                    <h2>
+                        <span class="lang-ar">عن مشروع LAVIA</span>
+                        <span class="lang-en">About LAVIA Project</span>
+                    </h2>
+                    <p class="mb-6">
+                        <span class="lang-ar">LAVIA هو منتجع سكني فاخر يقع في أفضل مواقع العين السخنة، حيث يجمع بين التصميم المعماري الفريد والإطلالات الخلابة على البحر الأحمر. تم تصميم المشروع ليقدم تجربة سكنية استثنائية تجمع بين الرفاهية والطبيعة.</span>
+                        <span class="lang-en">LAVIA is a luxury residential resort located in the best area of Ain Sokhna, combining unique architectural design with stunning views of the Red Sea. The project is designed to provide an exceptional living experience that blends luxury and nature.</span>
+                    </p>
+                    
+                    <div class="overview-features">
+                        <div class="overview-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="lang-ar">تصميم معماري فريد</span>
+                            <span class="lang-en">Unique Architectural Design</span>
+                        </div>
+                        <div class="overview-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="lang-ar">تشطيب سوبر لوكس</span>
+                            <span class="lang-en">Super Lux Finishing</span>
+                        </div>
+                        <div class="overview-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="lang-ar">مرافق متكاملة</span>
+                            <span class="lang-en">Integrated Facilities</span>
+                        </div>
+                        <div class="overview-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="lang-ar">خدمة 24/7</span>
+                            <span class="lang-en">24/7 Service</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary mt-8" onclick="scrollToSection('lavia-contact')">
+                        <span class="lang-ar">احجز زيارة</span>
+                        <span class="lang-en">Book a Visit</span>
+                    </button>
+                </div>
+                
+                <div class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="LAVIA Project" 
+                         class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Gallery Section -->
+    <section id="lavia-gallery" class="section lavia-gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">معرض مشروع LAVIA</span>
+                    <span class="lang-en">LAVIA Project Gallery</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">استكشف جمال وفخامة مشروع LAVيا من خلال صور حقيقية للمشروع</span>
+                    <span class="lang-en">Explore the beauty and luxury of LAVIA project through real project photos</span>
+                </p>
+            </div>
+
+            <!-- Gallery Tabs -->
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-category="all">
+                    <span class="lang-ar">جميع الصور</span>
+                    <span class="lang-en">All Photos</span>
+                </button>
+                <button class="gallery-tab" data-category="exterior">
+                    <span class="lang-ar">التصميم الخارجي</span>
+                    <span class="lang-en">Exterior Design</span>
+                </button>
+                <button class="gallery-tab" data-category="interior">
+                    <span class="lang-ar">التصميم الداخلي</span>
+                    <span class="lang-en">Interior Design</span>
+                </button>
+                <button class="gallery-tab" data-category="apartments">
+                    <span class="lang-ar">الشقق</span>
+                    <span class="lang-en">Apartments</span>
+                </button>
+                <button class="gallery-tab" data-category="amenities">
+                    <span class="lang-ar">المرافق</span>
+                    <span class="lang-en">Amenities</span>
+                </button>
+                <button class="gallery-tab" data-category="views">
+                    <span class="lang-ar">الإطلالات</span>
+                    <span class="lang-en">Views</span>
+                </button>
+            </div>
+
+            <!-- Gallery Content -->
+            <div class="gallery-content">
+                <!-- All Photos -->
+                <div id="category-all" class="gallery-category active">
+                    <div class="gallery-grid" id="gallery-all">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- Exterior Design -->
+                <div id="category-exterior" class="gallery-category">
+                    <div class="gallery-grid" id="gallery-exterior">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- Interior Design -->
+                <div id="category-interior" class="gallery-category">
+                    <div class="gallery-grid" id="gallery-interior">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- Apartments -->
+                <div id="category-apartments" class="gallery-category">
+                    <div class="gallery-grid" id="gallery-apartments">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- Amenities -->
+                <div id="category-amenities" class="gallery-category">
+                    <div class="gallery-grid" id="gallery-amenities">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- Views -->
+                <div id="category-views" class="gallery-category">
+                    <div class="gallery-grid" id="gallery-views">
+                        <!-- سيتم إضافة الصور ديناميكياً -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Units Section -->
+    <section id="lavia-units" class="section lavia-units">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">وحدات LAVIA</span>
+                    <span class="lang-en">LAVIA Units</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">اختر الوحدة التي تناسب احتياجاتك من بين تشكيلتنا الواسعة من الوحدات السكنية الفاخرة</span>
+                    <span class="lang-en">Choose the unit that fits your needs from our wide range of luxury residential units</span>
+                </p>
+            </div>
+
+            <!-- Units Tabs -->
+            <div class="units-tabs">
+                <button class="unit-tab active" data-type="all">
+                    <span class="lang-ar">جميع الوحدات</span>
+                    <span class="lang-en">All Units</span>
+                </button>
+                <button class="unit-tab" data-type="studio">
+                    <span class="lang-ar">استوديو</span>
+                    <span class="lang-en">Studio</span>
+                </button>
+                <button class="unit-tab" data-type="apartment">
+                    <span class="lang-ar">شقق</span>
+                    <span class="lang-en">Apartments</span>
+                </button>
+                <button class="unit-tab" data-type="duplex">
+                    <span class="lang-ar">دوبلكس</span>
+                    <span class="lang-en">Duplex</span>
+                </button>
+                <button class="unit-tab" data-type="penthouse">
+                    <span class="lang-ar">بنتهاوس</span>
+                    <span class="lang-en">Penthouse</span>
+                </button>
+            </div>
+
+            <!-- Units Grid -->
+            <div class="units-grid" id="units-container">
+                <!-- سيتم إضافة الوحدات ديناميكياً -->
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Amenities Section -->
+    <section id="lavia-amenities" class="section lavia-amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">مرافق LAVIA</span>
+                    <span class="lang-en">LAVIA Amenities</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">استمتع بمجموعة متكاملة من المرافق والخدمات الفاخرة المصممة لتلبية جميع احتياجاتك</span>
+                    <span class="lang-en">Enjoy a comprehensive range of luxury facilities and services designed to meet all your needs</span>
+                </p>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">🏊‍♂️</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">مسابح أولمبية</span>
+                        <span class="lang-en">Olympic Pools</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">3 مسابح أولمبية بمقاسات مختلفة للكبار والأطفال</span>
+                        <span class="lang-en">3 Olympic pools in different sizes for adults and children</span>
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-icon">🏋️‍♂️</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">نادي صحي</span>
+                        <span class="lang-en">Health Club</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">نادي صحي مجهز بأحدث الأجهزة الرياضية ومدربين متخصصين</span>
+                        <span class="lang-en">Health club equipped with latest sports equipment and specialized trainers</span>
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-icon">👶</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">منطقة أطفال</span>
+                        <span class="lang-en">Kids Area</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">منطقة ترفيهية آمنة ومجهزة لأطفالك للعب والترفيه</span>
+                        <span class="lang-en">Safe and equipped entertainment area for your children to play and have fun</span>
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-icon">🛍️</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">مركز تجاري</span>
+                        <span class="lang-en">Commercial Center</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">مركز تجاري يضم أفضل الماركات والمطاعم والخدمات</span>
+                        <span class="lang-en">Commercial center featuring top brands, restaurants, and services</span>
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-icon">🏖️</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">شاطئ خاص</span>
+                        <span class="lang-en">Private Beach</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">شاطئ خاص مجهز بجميع الخدمات والمرافق اللازمة</span>
+                        <span class="lang-en">Private beach equipped with all necessary services and facilities</span>
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-icon">🎾</div>
+                    <h3 class="amenity-title">
+                        <span class="lang-ar">ملاعب رياضية</span>
+                        <span class="lang-en">Sports Courts</span>
+                    </h3>
+                    <p class="amenity-description">
+                        <span class="lang-ar">ملاعب تنس، كرة سلة، وكرة قدم مجهزة بأعلى المواصفات</span>
+                        <span class="lang-en">Tennis, basketball, and football courts equipped with highest specifications</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Location Section -->
+    <section id="lavia-location" class="section lavia-location">
+        <div class="container">
+            <div class="location-container">
+                <div class="location-info">
+                    <h3>
+                        <span class="lang-ar">موقع متميز</span>
+                        <span class="lang-en">Prime Location</span>
+                    </h3>
+                    <p class="mb-6">
+                        <span class="lang-ar">يقع مشروع LAVIA في أفضل مواقع العين السخنة، حيث يتمتع بإطلالة مباشرة على البحر الأحمر ويبعد دقائق فقط عن الطريق السريع والخدمات الأساسية.</span>
+                        <span class="lang-en">LAVIA project is located in the best area of Ain Sokhna, featuring direct views of the Red Sea and just minutes away from the highway and essential services.</span>
+                    </p>
+
+                    <div class="location-features">
+                        <div class="location-feature">
+                            <i class="fas fa-clock"></i>
+                            <span class="lang-ar">45 دقيقة من القاهرة</span>
+                            <span class="lang-en">45 minutes from Cairo</span>
+                        </div>
+                        <div class="location-feature">
+                            <i class="fas fa-road"></i>
+                            <span class="lang-ar">على الطريق السريع</span>
+                            <span class="lang-en">On the highway</span>
+                        </div>
+                        <div class="location-feature">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="lang-ar">قريب من المراكز التجارية</span>
+                            <span class="lang-en">Close to commercial centers</span>
+                        </div>
+                        <div class="location-feature">
+                            <i class="fas fa-utensils"></i>
+                            <span class="lang-ar">مطاعم وخدمات قريبة</span>
+                            <span class="lang-en">Nearby restaurants and services</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary mt-8" onclick="openNavigation()">
+                        <span class="lang-ar">احصل على الاتجاهات</span>
+                        <span class="lang-en">Get Directions</span>
+                    </button>
+                </div>
+
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>
+                            <span class="lang-ar">خريطة موقع LAVIA</span>
+                            <span class="lang-en">LAVIA Location Map</span>
+                        </h4>
+                        <p class="lang-ar">العين السخنة - طريق البحر الأحمر</p>
+                        <p class="lang-en">Ain Sokhna - Red Sea Road</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAVIA Contact Section -->
+    <section id="lavia-contact" class="section lavia-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: var(--gold);">
+                    <span class="lang-ar">احجز وحدة في LAVIA</span>
+                    <span class="lang-en">Book a Unit in LAVIA</span>
+                </h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">
+                    <span class="lang-ar">اتصل بنا الآن لترتيب زيارة أو للحصول على استشارة مجانية</span>
+                    <span class="lang-en">Contact us now to arrange a visit or get a free consultation</span>
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>
+                        <span class="lang-ar">معلومات الاتصال</span>
+                        <span class="lang-en">Contact Information</span>
+                    </h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>+20 123 456 7890</strong>
+                                <p>
+                                    <span class="lang-ar">اتصل بفريق المبيعات</span>
+                                    <span class="lang-en">Call our sales team</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>+20 123 456 7890</strong>
+                                <p>
+                                    <span class="lang-ar">راسلنا على واتساب</span>
+                                    <span class="lang-en">Message us on WhatsApp</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>lavia@megaservices.com</strong>
+                                <p>
+                                    <span class="lang-ar">أرسل لنا بريد إلكتروني</span>
+                                    <span class="lang-en">Send us an email</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>
+                                    <span class="lang-ar">العين السخنة - طريق البحر الأحمر</span>
+                                    <span class="lang-en">Ain Sokhna - Red Sea Road</span>
+                                </strong>
+                                <p>
+                                    <span class="lang-ar">مقر المشروع</span>
+                                    <span class="lang-en">Project location</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="laviaContactForm" class="space-y-6">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الاسم الكامل</span>
+                                <span class="lang-en">Full Name</span>
+                            </label>
+                            <input type="text" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">البريد الإلكتروني</span>
+                                <span class="lang-en">Email</span>
+                            </label>
+                            <input type="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">رقم الهاتف</span>
+                                <span class="lang-en">Phone Number</span>
+                            </label>
+                            <input type="tel" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">نوع الوحدة المهتم بها</span>
+                                <span class="lang-en">Interested Unit Type</span>
+                            </label>
+                            <select name="unitType" class="form-select" required>
+                                <option value="">
+                                    <span class="lang-ar">اختر نوع الوحدة</span>
+                                    <span class="lang-en">Select Unit Type</span>
+                                </option>
+                                <option value="studio">استوديو - Studio</option>
+                                <option value="1-bedroom">
+                                    <span class="lang-ar">شقة غرفة نوم واحدة</span>
+                                    <span class="lang-en">1 Bedroom Apartment</span>
+                                </option>
+                                <option value="2-bedroom">
+                                    <span class="lang-ar">شقة غرفتي نوم</span>
+                                    <span class="lang-en">2 Bedroom Apartment</span>
+                                </option>
+                                <option value="3-bedroom">
+                                    <span class="lang-ar">شقة 3 غرف نوم</span>
+                                    <span class="lang-en">3 Bedroom Apartment</span>
+                                </option>
+                                <option value="duplex">
+                                    <span class="lang-ar">دوبلكس</span>
+                                    <span class="lang-en">Duplex</span>
+                                </option>
+                                <option value="penthouse">
+                                    <span class="lang-ar">بنتهاوس</span>
+                                    <span class="lang-en">Penthouse</span>
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الرسالة</span>
+                                <span class="lang-en">Message</span>
+                            </label>
+                            <textarea name="message" class="form-textarea" rows="4" placeholder="...اكتب رسالتك هنا"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">
+                            <span class="lang-ar">إرسال طلب الحجز</span>
+                            <span class="lang-en">Submit Booking Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-counter" id="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-navy);">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <img src="https://i.ibb.co/67c2rfPJ/IMG-20251023-WA0002.jpg" 
+                             alt="Mega Services" 
+                             class="logo-img">
+                        <div class="logo-text">MEGA SERVICES</div>
+                    </div>
+                    <p class="footer-description">
+                        <span class="lang-ar">مشروع LAVIA - منتجع سكني فاخر في العين السخنة يقدم تجربة سكنية استثنائية تجمع بين الفخامة والطبيعة.</span>
+                        <span class="lang-en">LAVIA project - luxury residential resort in Ain Sokhna offering exceptional living experience combining luxury and nature.</span>
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">روابط سريعة</span>
+                        <span class="lang-en">Quick Links</span>
+                    </h3>
+                    <div class="footer-links">
+                        <a href="#lavia-hero" class="footer-link">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                        <a href="#lavia-overview" class="footer-link">
+                            <span class="lang-ar">عن المشروع</span>
+                            <span class="lang-en">About</span>
+                        </a>
+                        <a href="#lavia-units" class="footer-link">
+                            <span class="lang-ar">الوحدات</span>
+                            <span class="lang-en">Units</span>
+                        </a>
+                        <a href="#lavia-gallery" class="footer-link">
+                            <span class="lang-ar">المعرض</span>
+                            <span class="lang-en">Gallery</span>
+                        </a>
+                        <a href="#lavia-contact" class="footer-link">
+                            <span class="lang-ar">اتصل بنا</span>
+                            <span class="lang-en">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">الوحدات</span>
+                        <span class="lang-en">Units</span>
+                    </h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">استوديو - Studio</a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">شقق غرفة نوم</span>
+                            <span class="lang-en">1 Bedroom</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">شقق غرفتي نوم</span>
+                            <span class="lang-en">2 Bedrooms</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">دوبلكس</span>
+                            <span class="lang-en">Duplex</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">معلومات الاتصال</span>
+                        <span class="lang-en">Contact Info</span>
+                    </h3>
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <i class="fas fa-phone"></i> +20 123 456 7890
+                        </div>
+                        <div class="footer-link">
+                            <i class="fab fa-whatsapp"></i> +20 123 456 7890
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-envelope"></i> lavia@megaservices.com
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span class="lang-ar">العين السخنة</span>
+                            <span class="lang-en">Ain Sokhna</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2024 Mega Services - LAVIA Project. 
+                    <span class="lang-ar">جميع الحقوق محفوظة.</span>
+                    <span class="lang-en">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== LAVIA GALLERY SYSTEM =====
+        class LaviaGallery {
+            constructor() {
+                this.images = [];
+                this.currentCategory = 'all';
+                this.currentImageIndex = 0;
+                this.currentImages = [];
+            }
+
+            init() {
+                this.loadImages();
+                this.setupEventListeners();
+                this.renderGallery();
+                this.renderUnits();
+            }
+
+            loadImages() {
+                // هنا تضيف رابط الصور الحقيقية لمشروع LAVIA
+                this.images = [
+                    // التصميم الخارجي
+                    {
+                        id: 1,
+                        src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'exterior',
+                        title: {
+                            ar: 'واجهة المشروع الرئيسية',
+                            en: 'Main Project Facade'
+                        },
+                        description: {
+                            ar: 'التصميم المعماري الفريد لواجهة مشروع LAVIA',
+                            en: 'Unique architectural design of LAVIA project facade'
+                        }
+                    },
+                    {
+                        id: 2,
+                        src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'exterior',
+                        title: {
+                            ar: 'المدخل الرئيسي',
+                            en: 'Main Entrance'
+                        },
+                        description: {
+                            ar: 'مدخل فاخر يعكس فخامة المشروع',
+                            en: 'Luxurious entrance reflecting project elegance'
+                        }
+                    },
+
+                    // التصميم الداخلي
+                    {
+                        id: 3,
+                        src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'interior',
+                        title: {
+                            ar: 'اللوبي الرئيسي',
+                            en: 'Main Lobby'
+                        },
+                        description: {
+                            ar: 'تصميم داخلي فاخر في اللوبي الرئيسي',
+                            en: 'Luxurious interior design in main lobby'
+                        }
+                    },
+                    {
+                        id: 4,
+                        src: 'https://images.unsplash.com/photo-1615529162927-89fc6c6f2d89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'interior',
+                        title: {
+                            ar: 'الممرات الداخلية',
+                            en: 'Internal Corridors'
+                        },
+                        description: {
+                            ar: 'ممرات فاخرة بتصميم عصري',
+                            en: 'Luxurious corridors with modern design'
+                        }
+                    },
+
+                    // الشقق
+                    {
+                        id: 5,
+                        src: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'apartments',
+                        title: {
+                            ar: 'شقة 3 غرف نوم',
+                            en: '3 Bedroom Apartment'
+                        },
+                        description: {
+                            ar: 'شقة فاخرة بغرف نوم واسعة',
+                            en: 'Luxurious apartment with spacious bedrooms'
+                        }
+                    },
+                    {
+                        id: 6,
+                        src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'apartments',
+                        title: {
+                            ar: 'شقة بغرفتين',
+                            en: '2 Bedroom Apartment'
+                        },
+                        description: {
+                            ar: 'شقة أنيقة بتصميم عملي',
+                            en: 'Elegant apartment with practical design'
+                        }
+                    },
+                    {
+                        id: 7,
+                        src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'apartments',
+                        title: {
+                            ar: 'شقة استوديو',
+                            en: 'Studio Apartment'
+                        },
+                        description: {
+                            ar: 'شقة استوديو بتصميم ذكي',
+                            en: 'Studio apartment with smart design'
+                        }
+                    },
+
+                    // المرافق
+                    {
+                        id: 8,
+                        src: 'https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'amenities',
+                        title: {
+                            ar: 'حمام السباحة الرئيسي',
+                            en: 'Main Swimming Pool'
+                        },
+                        description: {
+                            ar: 'حمام سباحة أولمبي بمواصفات عالمية',
+                            en: 'Olympic swimming pool with international standards'
+                        }
+                    },
+                    {
+                        id: 9,
+                        src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'amenities',
+                        title: {
+                            ar: 'النادي الصحي',
+                            en: 'Health Club'
+                        },
+                        description: {
+                            ar: 'نادي صحي مجهز بأحدث الأجهزة',
+                            en: 'Health club equipped with latest equipment'
+                        }
+                    },
+                    {
+                        id: 10,
+                        src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'amenities',
+                        title: {
+                            ar: 'منطقة الأطفال',
+                            en: 'Kids Area'
+                        },
+                        description: {
+                            ar: 'منطقة ترفيهية آمنة للأطفال',
+                            en: 'Safe entertainment area for children'
+                        }
+                    },
+
+                    // الإطلالات
+                    {
+                        id: 11,
+                        src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'views',
+                        title: {
+                            ar: 'إطلالة على البحر',
+                            en: 'Sea View'
+                        },
+                        description: {
+                            ar: 'إطلالة خلابة على البحر الأحمر',
+                            en: 'Stunning view of the Red Sea'
+                        }
+                    },
+                    {
+                        id: 12,
+                        src: 'https://images.unsplash.com/photo-1501786223405-6d024d7c3b8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                        category: 'views',
+                        title: {
+                            ar: 'إطلالة المساء',
+                            en: 'Evening View'
+                        },
+                        description: {
+                            ar: 'منظر ساحر أثناء غروب الشمس',
+                            en: 'Charming view during sunset'
+                        }
+                    }
+                ];
+            }
+
+            setupEventListeners() {
+                // تبويبات المعرض
+                const tabs = document.querySelectorAll('.gallery-tab');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const category = tab.getAttribute('data-category');
+                        this.switchCategory(category);
+                    });
+                });
+
+                // تبويبات الوحدات
+                const unitTabs = document.querySelectorAll('.unit-tab');
+                unitTabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const type = tab.getAttribute('data-type');
+                        this.switchUnitType(type);
+                    });
+                });
+
+                // نموذج الاتصال
+                const contactForm = document.getElementById('laviaContactForm');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', (e) => this.handleContactForm(e));
+                }
+
+                // إغلاق اللايت بوكس بالضغط على ESC
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.closeLightbox();
+                    }
+                });
+
+                // التنقل بين الصور باستخدام الأسهم
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight') {
+                        this.changeImage(-1);
+                    } else if (e.key === 'ArrowLeft') {
+                        this.changeImage(1);
+                    }
+                });
+
+                // التنقل في القائمة
+                this.setupMobileMenu();
+            }
+
+            setupMobileMenu() {
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                const desktopNav = document.querySelector('.desktop-nav');
+                
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpen = desktopNav.style.display === 'flex';
+                    
+                    if (isOpen) {
+                        desktopNav.style.display = 'none';
+                    } else {
+                        desktopNav.style.display = 'flex';
+                        desktopNav.style.flexDirection = 'column';
+                        desktopNav.style.position = 'absolute';
+                        desktopNav.style.top = '100%';
+                        desktopNav.style.left = '0';
+                        desktopNav.style.right = '0';
+                        desktopNav.style.background = 'rgba(10, 35, 66, 0.95)';
+                        desktopNav.style.padding = '1rem';
+                        desktopNav.style.gap = '1rem';
+                    }
+                });
+            }
+
+            switchCategory(category) {
+                // تحديث التبويبات النشطة
+                document.querySelectorAll('.gallery-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+                // تحديد الفئات النشطة
+                document.querySelectorAll('.gallery-category').forEach(cat => {
+                    cat.classList.remove('active');
+                });
+                document.getElementById(`category-${category}`).classList.add('active');
+
+                this.currentCategory = category;
+            }
+
+            switchUnitType(type) {
+                // تحديث التبويبات النشطة
+                document.querySelectorAll('.unit-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelector(`[data-type="${type}"]`).classList.add('active');
+
+                this.filterUnits(type);
+            }
+
+            filterUnits(type) {
+                const units = document.querySelectorAll('.unit-card');
+                units.forEach(unit => {
+                    if (type === 'all' || unit.getAttribute('data-type') === type) {
+                        unit.style.display = 'block';
+                    } else {
+                        unit.style.display = 'none';
+                    }
+                });
+            }
+
+            renderGallery() {
+                // عرض جميع الصور في كل الفئات
+                const categories = ['all', 'exterior', 'interior', 'apartments', 'amenities', 'views'];
+                
+                categories.forEach(category => {
+                    const container = document.getElementById(`gallery-${category}`);
+                    if (!container) return;
+
+                    let filteredImages = category === 'all' 
+                        ? this.images 
+                        : this.images.filter(img => img.category === category);
+
+                    container.innerHTML = filteredImages.map(image => `
+                        <div class="gallery-item" onclick="laviaGallery.openLightbox(${image.id}, '${category}')">
+                            <img src="${image.src}" 
+                                 alt="${appState.language === 'ar' ? image.title.ar : image.title.en}" 
+                                 class="gallery-image"
+                                 loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>${appState.language === 'ar' ? image.title.ar : image.title.en}</h3>
+                                    <p>${appState.language === 'ar' ? image.description.ar : image.description.en}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                });
+            }
+
+            renderUnits() {
+                const units = [
+                    {
+                        id: 1,
+                        type: 'studio',
+                        title: {
+                            ar: 'استوديو فاخر',
+                            en: 'Luxury Studio'
+                        },
+                        size: '75 م²',
+                        price: {
+                            ar: '2,500,000 جنيه',
+                            en: '2,500,000 EGP'
+                        },
+                        image: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                        features: ['1 غرفة نوم', '1 حمام', 'مطبخ مفتوح', 'إطلالة بحرية']
+                    },
+                    {
+                        id: 2,
+                        type: 'apartment',
+                        title: {
+                            ar: 'شقة بغرفتين',
+                            en: '2 Bedroom Apartment'
+                        },
+                        size: '120 م²',
+                        price: {
+                            ar: '4,200,000 جنيه',
+                            en: '4,200,000 EGP'
+                        },
+                        image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                        features: ['2 غرفة نوم', '2 حمام', 'صالة واسعة', 'مطبخ', 'بلكونة']
+                    },
+                    {
+                        id: 3,
+                        type: 'apartment',
+                        title: {
+                            ar: 'شقة 3 غرف نوم',
+                            en: '3 Bedroom Apartment'
+                        },
+                        size: '160 م²',
+                        price: {
+                            ar: '5,800,000 جنيه',
+                            en: '5,800,000 EGP'
+                        },
+                        image: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                        features: ['3 غرفة نوم', '3 حمام', 'صالة كبيرة', 'مطبخ راقي', 'بلكونة']
+                    },
+                    {
+                        id: 4,
+                        type: 'duplex',
+                        title: {
+                            ar: 'دوبلكس فاخر',
+                            en: 'Luxury Duplex'
+                        },
+                        size: '220 م²',
+                        price: {
+                            ar: '8,500,000 جنيه',
+                            en: '8,500,000 EGP'
+                        },
+                        image: 'https://images.unsplash.com/photo-1615529162927-89fc6c6f2d89?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                        features: ['4 غرفة نوم', '4 حمام', 'صالتان', 'مطبخ', 'تراس']
+                    },
+                    {
+                        id: 5,
+                        type: 'penthouse',
+                        title: {
+                            ar: 'بنتهاوس راقي',
+                            en: 'Elegant Penthouse'
+                        },
+                        size: '300 م²',
+                        price: {
+                            ar: '12,000,000 جنيه',
+                            en: '12,000,000 EGP'
+                        },
+                        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                        features: ['4 غرفة نوم', '4 حمام', '3 صالات', 'مطبخ فاخر', 'تراس كبير']
+                    }
+                ];
+
+                const container = document.getElementById('units-container');
+                container.innerHTML = units.map(unit => `
+                    <div class="unit-card" data-type="${unit.type}">
+                        <img src="${unit.image}" alt="${appState.language === 'ar' ? unit.title.ar : unit.title.en}" class="unit-image">
+                        <div class="unit-content">
+                            <div class="unit-type">${appState.language === 'ar' ? unit.title.ar : unit.title.en}</div>
+                            <div class="unit-size">${unit.size}</div>
+                            <div class="unit-price">${appState.language === 'ar' ? unit.price.ar : unit.price.en}</div>
+                            <div class="unit-features">
+                                ${unit.features.map(feature => `
+                                    <div class="unit-feature">
+                                        <i class="fas fa-check"></i>
+                                        <span>${feature}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            <button class="btn btn-primary w-full" onclick="scrollToSection('lavia-contact')">
+                                <span class="lang-ar">احجز الآن</span>
+                                <span class="lang-en">Book Now</span>
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            openLightbox(imageId, category) {
+                this.currentImages = category === 'all' 
+                    ? this.images 
+                    : this.images.filter(img => img.category === category);
+                
+                this.currentImageIndex = this.currentImages.findIndex(img => img.id === imageId);
+                
+                if (this.currentImageIndex === -1) return;
+
+                this.showImage();
+                document.getElementById('lightbox').classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            showImage() {
+                const image = this.currentImages[this.currentImageIndex];
+                const lightboxImage = document.getElementById('lightbox-image');
+                const lightboxCounter = document.getElementById('lightbox-counter');
+
+                lightboxImage.src = image.src;
+                lightboxImage.alt = appState.language === 'ar' ? image.title.ar : image.title.en;
+                
+                lightboxCounter.textContent = `${this.currentImageIndex + 1} / ${this.currentImages.length}`;
+            }
+
+            changeImage(direction) {
+                this.currentImageIndex += direction;
+
+                if (this.currentImageIndex < 0) {
+                    this.currentImageIndex = this.currentImages.length - 1;
+                } else if (this.currentImageIndex >= this.currentImages.length) {
+                    this.currentImageIndex = 0;
+                }
+
+                this.showImage();
+            }
+
+            closeLightbox() {
+                document.getElementById('lightbox').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            handleContactForm(e) {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                
+                // هنا يمكنك إضافة كود إرسال النموذج
+                alert(appState.language === 'ar' ? 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً.' : 'Your request has been sent successfully! We will contact you soon.');
+                e.target.reset();
+            }
+        }
+
+        // ===== GLOBAL FUNCTIONS =====
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const offset = 80;
+                const elementPosition = element.offsetTop - offset;
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function openNavigation() {
+            // افتح تطبيق الخرائط
+            window.open('https://maps.google.com/?q=العين+السخنة+طريق+البحر+الأحمر', '_blank');
+        }
+
+        // ===== LANGUAGE SYSTEM =====
+        class LanguageManager {
+            constructor() {
+                this.currentLanguage = 'ar';
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.updateLanguage();
+            }
+
+            setupEventListeners() {
+                const toggle = document.getElementById('languageToggle');
+                if (toggle) {
+                    toggle.addEventListener('click', () => {
+                        this.switchLanguage(this.currentLanguage === 'ar' ? 'en' : 'ar');
+                    });
+                }
+            }
+
+            switchLanguage(lang) {
+                this.currentLanguage = lang;
+                localStorage.setItem('megaServices_language', lang);
+                
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                document.documentElement.lang = lang;
+                
+                if (lang === 'en') {
+                    document.body.classList.add('en');
+                } else {
+                    document.body.classList.remove('en');
+                }
+                
+                this.showNotification(
+                    lang === 'ar' ? 'تم التبديل إلى العربية' : 'Switched to English'
+                );
+            }
+
+            updateLanguage() {
+                const savedLang = localStorage.getItem('megaServices_language') || 'ar';
+                this.switchLanguage(savedLang);
+            }
+
+            showNotification(message) {
+                // يمكنك إضافة نظام إشعارات هنا
+                console.log(message);
+            }
+        }
+
+        // ===== INITIALIZATION =====
+        const laviaGallery = new LaviaGallery();
+        const languageManager = new LanguageManager();
+        const appState = {
+            language: 'ar'
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize systems
+            laviaGallery.init();
+            languageManager.init();
+
+            // Navigation scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                const scrolled = window.scrollY > 50;
+                navbar.classList.toggle('scrolled', scrolled);
+            });
+
+            console.log('🚀 LAVIA Project Page Loaded Successfully!');
+        });
+
+        // Global functions
+        function openLightbox(imageId, category) {
+            laviaGallery.openLightbox(imageId, category);
+        }
+
+        function closeLightbox() {
+            laviaGallery.closeLightbox();
+        }
+
+        function changeImage(direction) {
+            laviaGallery.changeImage(direction);
+        }
+
+        // Export for global access
+        window.laviaGallery = laviaGallery;
+        window.openLightbox = openLightbox;
+        window.closeLightbox = closeLightbox;
+        window.changeImage = changeImage;
+        window.scrollToSection = scrollToSection;
+        window.openNavigation = openNavigation;
+        window.appState = appState;
+    </script>
+</body>
+</html>
