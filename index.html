@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Services | شركة التطوير العقاري الرائدة في العين السخنة</title>
+    <meta name="description" content="شركة Mega Services للاستثمار والتطوير العقاري - مشاريع سكنية وفندقية فاخرة في العين السخنة. اكتشف مشروع LAVIA الفاخر.">
+    <meta name="keywords" content="العين السخنة, تطوير عقاري, استثمار, شقق فاخرة, منتجعات, LAVIA, مصر, البحر الأحمر">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mega Services | شركة التطوير العقاري">
+    <meta property="og:description" content="شركة Mega Services للاستثمار والتطوير العقاري - مشاريع سكنية وفندقية فاخرة في العين السخنة">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/67c2rfPJ/IMG-20251023-WA0002.jpg">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== VARIABLES ===== */
+        :root {
+            --gold: #D4AF37;
+            --navy: #0A2342;
+            --white: #FFFFFF;
+            --sand: #F5F1E6;
+            --light-gold: #F7E8C6;
+            --dark-navy: #061A2D;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        /* ===== BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background: var(--sand);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .en {
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--navy);
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav-primary {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-primary.scrolled {
+            background: rgba(10, 35, 66, 0.95);
+            box-shadow: var(--shadow-lg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 3rem;
+            width: auto;
+            border-radius: 8px;
+        }
+
+        .logo-text {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-primary.scrolled .nav-link {
+            color: var(--white);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            background: #c19d2f;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+        }
+
+        .language-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .language-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.9), rgba(6, 26, 45, 0.8)),
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--white);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .scroll-indicator {
+            color: var(--white);
+            font-size: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .scroll-indicator:hover {
+            opacity: 1;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects-section {
+            background: var(--white);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-location {
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-description {
+            color: var(--navy);
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-tag {
+            background: var(--light-gold);
+            color: var(--navy);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .project-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .status-available {
+            background: #10b981;
+            color: white;
+        }
+
+        .status-coming {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .status-sold {
+            background: #ef4444;
+            color: white;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            background: var(--sand);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--navy);
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* ===== AI CONCIERGE SECTION ===== */
+        .concierge-section {
+            background: linear-gradient(135deg, var(--navy), var(--dark-navy));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .concierge-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .concierge-container {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .concierge-step {
+            display: none;
+        }
+
+        .concierge-step.active {
+            display: block;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ai-powered-badge {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .preference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .preference-option {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid transparent;
+            border-radius: var(--border-radius);
+            padding: 2rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+
+        .preference-option:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .preference-option.selected {
+            border-color: var(--gold);
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .preference-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .preference-title {
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .preference-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+        }
+
+        /* ===== GALLERY SECTION ===== */
+        .gallery-section {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-info h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-info p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+        }
+
+        /* ===== TESTIMONIALS SECTION ===== */
+        .testimonials-section {
+            background: var(--sand);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-quote {
+            position: absolute;
+            top: -1rem;
+            right: 1rem;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .star {
+            color: var(--gold);
+        }
+
+        .testimonial-text {
+            color: var(--navy);
+            opacity: 0.9;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 3rem;
+            height: 3rem;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--navy);
+            font-weight: 600;
+        }
+
+        .author-info h4 {
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--navy);
+            opacity: 0.7;
+            font-size: 0.875rem;
+        }
+
+        /* ===== BOOKING SECTION ===== */
+        .booking-section {
+            background: var(--white);
+        }
+
+        .booking-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .booking-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--sand);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .info-card h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .booking-form {
+            background: var(--sand);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: var(--white);
+            border: 1px solid rgba(10, 35, 66, 0.2);
+            border-radius: var(--border-radius);
+            color: var(--navy);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: linear-gradient(135deg, var(--navy), var(--dark-navy));
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .contact-card h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark-navy);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+        .footer-heading {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* ===== FLOATING BUTTONS ===== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            z-index: 1000;
+        }
+
+        .floating-btn {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            box-shadow: var(--shadow-lg);
+            color: var(--white);
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .booking-btn {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .concierge-btn {
+            background: var(--navy);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .call-btn {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .top-btn {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .top-btn.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .booking-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .floating-buttons {
+                bottom: 1rem;
+                left: 1rem;
+            }
+            
+            .floating-btn {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 0.75rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .preference-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .concierge-container {
+                padding: 2rem 1rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-3 {
+            gap: 0.75rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        /* ===== AI LOADING STATES ===== */
+        .ai-loading {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .ai-loading-spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .ai-loading-text {
+            color: var(--white);
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ai-loading-subtext {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.875rem;
+        }
+
+        /* ===== LANGUAGE TOGGLE STYLES ===== */
+        .lang-ar {
+            display: block;
+        }
+
+        .lang-en {
+            display: none;
+        }
+
+        body.en .lang-ar {
+            display: none;
+        }
+
+        body.en .lang-en {
+            display: block;
+        }
+
+        body.en {
+            direction: ltr;
+        }
+
+        body.en .hero-content,
+        body.en .section-header {
+            text-align: left;
+        }
+
+        body.en .footer {
+            direction: ltr;
+        }
+
+        body.en .floating-buttons {
+            left: auto;
+            right: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            body.en .floating-buttons {
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-primary">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://i.ibb.co/67c2rfPJ/IMG-20251023-WA0002.jpg" 
+                         alt="Mega Services" 
+                         class="logo-img">
+                    <div class="logo-text">MEGA SERVICES</div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="#home" class="nav-link">
+                        <span class="lang-ar">الرئيسية</span>
+                        <span class="lang-en">Home</span>
+                    </a>
+                    <a href="#projects" class="nav-link">
+                        <span class="lang-ar">مشاريعنا</span>
+                        <span class="lang-en">Our Projects</span>
+                    </a>
+                    <a href="lavia.html" class="nav-link">
+                        <span class="lang-ar">LAVIA</span>
+                        <span class="lang-en">LAVIA</span>
+                    </a>
+                    <a href="#services" class="nav-link">
+                        <span class="lang-ar">خدماتنا</span>
+                        <span class="lang-en">Services</span>
+                    </a>
+                    <a href="#concierge" class="nav-link">
+                        <span class="lang-ar">الكونسيرج الذكي</span>
+                        <span class="lang-en">AI Concierge</span>
+                    </a>
+                    <a href="#gallery" class="nav-link">
+                        <span class="lang-ar">المعرض</span>
+                        <span class="lang-en">Gallery</span>
+                    </a>
+                    <a href="#testimonials" class="nav-link">
+                        <span class="lang-ar">آراء العملاء</span>
+                        <span class="lang-en">Testimonials</span>
+                    </a>
+                    <a href="#booking" class="nav-link">
+                        <span class="lang-ar">الحجز</span>
+                        <span class="lang-en">Booking</span>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <span class="lang-ar">اتصل بنا</span>
+                        <span class="lang-en">Contact</span>
+                    </a>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('booking')">
+                        <span class="lang-ar">احجز الآن</span>
+                        <span class="lang-en">Book Now</span>
+                    </button>
+                    <button class="language-toggle" id="languageToggle">
+                        <span class="lang-ar">EN</span>
+                        <span class="lang-en">AR</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="lang-ar">MEGA SERVICES</span>
+                    <span class="lang-en">MEGA SERVICES</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="lang-ar">شركة التطوير العقاري الرائدة في العين السخنة. نحن نبني مستقبلاً فاخراً على شواطئ البحر الأحمر.</span>
+                    <span class="lang-en">The leading real estate development company in Ain Sokhna. We're building a luxurious future on the Red Sea shores.</span>
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <span class="lang-ar">اكتشف مشاريعنا</span>
+                        <span class="lang-en">Discover Our Projects</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.location.href='lavia.html'">
+                        <span class="lang-ar">اكتشف LAVIA</span>
+                        <span class="lang-en">Discover LAVIA</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <button class="scroll-indicator" onclick="scrollToSection('projects')">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">أبرز مشروعاتنا</span>
+                    <span class="lang-en">Our Featured Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">اكتشف مشاريعنا العقارية الفاخرة في أفضل مواقع العين السخنة</span>
+                    <span class="lang-en">Discover our luxury real estate projects in the best locations of Ain Sokhna</span>
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: LAVIA -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="LAVIA Resort" class="project-image">
+                    <div class="project-content">
+                        <div class="project-status status-available">
+                            <span class="lang-ar">متوفر</span>
+                            <span class="lang-en">Available</span>
+                        </div>
+                        <h3 class="project-title">LAVIA</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="lang-ar">العين السخنة - البحر الأحمر</span>
+                            <span class="lang-en">Ain Sokhna - Red Sea</span>
+                        </div>
+                        <p class="project-description">
+                            <span class="lang-ar">منتجع LAVIA الفاخر يقدم تجربة سكنية استثنائية مع إطلالات بحرية خلابة وتصميم معماري فريد يجمع بين الفخامة والطبيعة.</span>
+                            <span class="lang-en">LAVIA luxury resort offers an exceptional residential experience with stunning sea views and unique architectural design that combines luxury and nature.</span>
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">شقق فاخرة</span>
+                            <span class="feature-tag">إطلالة بحرية</span>
+                            <span class="feature-tag">مسابح خاصة</span>
+                            <span class="feature-tag">خدمات فندقية</span>
+                        </div>
+                        <button class="btn btn-primary w-full" onclick="window.location.href='lavia.html'">
+                            <span class="lang-ar">اكتشف المزيد</span>
+                            <span class="lang-en">Discover More</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Coral Bay" class="project-image">
+                    <div class="project-content">
+                        <div class="project-status status-coming">
+                            <span class="lang-ar">قريباً</span>
+                            <span class="lang-en">Coming Soon</span>
+                        </div>
+                        <h3 class="project-title">Coral Bay</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="lang-ar">خليج العين السخنة</span>
+                            <span class="lang-en">Ain Sokhna Bay</span>
+                        </div>
+                        <p class="project-description">
+                            <span class="lang-ar">مجمع سكني فاخر يطل على الخليج مباشرة، مع مرافق ترفيهية متكاملة وتصميم عصري أنيق.</span>
+                            <span class="lang-en">Luxury residential complex directly overlooking the bay, with integrated recreational facilities and elegant modern design.</span>
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">فلل مستقلة</span>
+                            <span class="feature-tag">إطلالة خليجية</span>
+                            <span class="feature-tag">نادي صحي</span>
+                            <span class="feature-tag">حدائق خاصة</span>
+                        </div>
+                        <button class="btn btn-secondary w-full">
+                            <span class="lang-ar">التسجيل المبكر</span>
+                            <span class="lang-en">Early Registration</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Royal Oasis" class="project-image">
+                    <div class="project-content">
+                        <div class="project-status status-sold">
+                            <span class="lang-ar">مباع</span>
+                            <span class="lang-en">Sold Out</span>
+                        </div>
+                        <h3 class="project-title">Royal Oasis</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="lang-ar">الجبل الأول - العين السخنة</span>
+                            <span class="lang-en">First Mountain - Ain Sokhna</span>
+                        </div>
+                        <p class="project-description">
+                            <span class="lang-ar">واحة سكنية فاخرة على قمة الجبل مع إطلالات بانورامية للبحر، تقدم خصوصية تامة وخدمات استثنائية.</span>
+                            <span class="lang-en">Luxury residential oasis atop the mountain with panoramic sea views, offering complete privacy and exceptional services.</span>
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">إطلالة جبلية</span>
+                            <span class="feature-tag">خصوصية تامة</span>
+                            <span class="feature-tag">تصميم فريد</span>
+                            <span class="feature-tag">خدمة 24/7</span>
+                        </div>
+                        <button class="btn btn-secondary w-full">
+                            <span class="lang-ar">المشاريع القادمة</span>
+                            <span class="lang-en">Upcoming Projects</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">خدماتنا العقارية</span>
+                    <span class="lang-en">Our Real Estate Services</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">نقدم مجموعة متكاملة من الخدمات العقارية لتلبية جميع احتياجاتك</span>
+                    <span class="lang-en">We provide a comprehensive range of real estate services to meet all your needs</span>
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3 class="service-title">
+                        <span class="lang-ar">التطوير العقاري</span>
+                        <span class="lang-en">Real Estate Development</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-ar">نقوم بتطوير مشاريع عقارية فاخرة من التصميم حتى التسليم، مع الالتزام بأعلى معايير الجودة والتصميم.</span>
+                        <span class="lang-en">We develop luxury real estate projects from design to delivery, adhering to the highest standards of quality and design.</span>
+                    </p>
+                    <button class="btn btn-secondary" onclick="scrollToSection('projects')">
+                        <span class="lang-ar">عرض المشاريع</span>
+                        <span class="lang-en">View Projects</span>
+                    </button>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title">
+                        <span class="lang-ar">الاستثمار العقاري</span>
+                        <span class="lang-en">Real Estate Investment</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-ar">نقدم فرص استثمارية عقارية متميزة في أفضل مواقع العين السخنة مع عوائد استثمارية مجزية.</span>
+                        <span class="lang-en">We offer distinguished real estate investment opportunities in the best locations of Ain Sokhna with rewarding returns.</span>
+                    </p>
+                    <button class="btn btn-secondary" onclick="scrollToSection('booking')">
+                        <span class="lang-ar">استشارة استثمارية</span>
+                        <span class="lang-en">Investment Consultation</span>
+                    </button>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">
+                        <span class="lang-ar">إدارة الممتلكات</span>
+                        <span class="lang-en">Property Management</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-ar">خدمات إدارة متكاملة للممتلكات تشمل الصيانة، التأجير، والمحافظة على قيمة العقار.</span>
+                        <span class="lang-en">Comprehensive property management services including maintenance, rental, and property value preservation.</span>
+                    </p>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <span class="lang-ar">اطلب الخدمة</span>
+                        <span class="lang-en">Request Service</span>
+                    </button>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">
+                        <span class="lang-ar">الاستشارات العقارية</span>
+                        <span class="lang-en">Real Estate Consultancy</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-ar">استشارات متخصصة في السوق العقاري، التقييم، والدراسات الجدوى لضمان أفضل القرارات الاستثمارية.</span>
+                        <span class="lang-en">Specialized consultancy in real estate market, valuation, and feasibility studies to ensure the best investment decisions.</span>
+                    </p>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <span class="lang-ar">احجز استشارة</span>
+                        <span class="lang-en">Book Consultation</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Concierge Section -->
+    <section id="concierge" class="section concierge-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: white;">
+                    <span class="lang-ar">الكونسيرج الذكي</span>
+                    <span class="lang-en">AI Concierge</span>
+                </h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">
+                    <span class="lang-ar">دع الذكاء الاصطناعي يجد لك العقار المثالي بناءً على تفضيلاتك</span>
+                    <span class="lang-en">Let AI find your perfect property based on your preferences</span>
+                </p>
+            </div>
+            
+            <div class="concierge-container">
+                <!-- Step 1: Introduction -->
+                <div id="step1" class="concierge-step active">
+                    <div class="text-center">
+                        <div class="ai-powered-badge">
+                            <i class="fas fa-robot"></i>
+                            <span class="lang-ar">مدعوم بالذكاء الاصطناعي</span>
+                            <span class="lang-en">AI Powered</span>
+                        </div>
+                        <div class="text-5xl mb-4">🤖</div>
+                        <h3 class="text-2xl font-bold text-white mb-4">
+                            <span class="lang-ar">مرحبًا بك في الكونسيرج الذكي!</span>
+                            <span class="lang-en">Welcome to AI Concierge!</span>
+                        </h3>
+                        <p class="text-gray-300 mb-6">
+                            <span class="lang-ar">سأسألك بضع أسئلة سريعة وسأستخدم الذكاء الاصطناعي لتقديم أفضل التوصيات العقارية المخصصة لك.</span>
+                            <span class="lang-en">I'll ask you a few quick questions and use AI to provide the best personalized real estate recommendations for you.</span>
+                        </p>
+                        <button onclick="nextStep(2)" class="btn btn-primary">
+                            <span class="lang-ar">ابدأ الآن</span>
+                            <span class="lang-en">Start Now</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Property Type -->
+                <div id="step2" class="concierge-step">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                        <span class="lang-ar">ما نوع العقار الذي تبحث عنه؟</span>
+                        <span class="lang-en">What type of property are you looking for?</span>
+                    </h3>
+                    
+                    <div class="preference-grid">
+                        <div class="preference-option" onclick="selectPreference('apartment')">
+                            <div class="preference-icon">🏢</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">شقة</span>
+                                <span class="lang-en">Apartment</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">شقق فاخرة في مجمعات سكنية</span>
+                                <span class="lang-en">Luxury apartments in residential compounds</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectPreference('villa')">
+                            <div class="preference-icon">🏡</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">فيلا</span>
+                                <span class="lang-en">Villa</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">فلل مستقلة بمساحات خاصة</span>
+                                <span class="lang-en">Independent villas with private spaces</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectPreference('duplex')">
+                            <div class="preference-icon">🏘️</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">دوبلكس</span>
+                                <span class="lang-en">Duplex</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">وحدات دوبلكس فاخرة</span>
+                                <span class="lang-en">Luxury duplex units</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectPreference('investment')">
+                            <div class="preference-icon">📈</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">استثماري</span>
+                                <span class="lang-en">Investment</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">عقارات بغرض الاستثمار</span>
+                                <span class="lang-en">Properties for investment purposes</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between mt-8">
+                        <button onclick="prevStep(1)" class="btn btn-secondary">
+                            <span class="lang-ar">رجوع</span>
+                            <span class="lang-en">Back</span>
+                        </button>
+                        <button onclick="nextStep(3)" class="btn btn-primary">
+                            <span class="lang-ar">متابعة</span>
+                            <span class="lang-en">Continue</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Budget -->
+                <div id="step3" class="concierge-step">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                        <span class="lang-ar">ما هو ميزانيتك؟</span>
+                        <span class="lang-en">What is your budget?</span>
+                    </h3>
+                    
+                    <div class="preference-grid">
+                        <div class="preference-option" onclick="selectBudget('economy')">
+                            <div class="preference-icon">💰</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">اقتصادي</span>
+                                <span class="lang-en">Economy</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">حتى 2,000,000 جنيه</span>
+                                <span class="lang-en">Up to 2,000,000 EGP</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectBudget('medium')">
+                            <div class="preference-icon">💵</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">متوسط</span>
+                                <span class="lang-en">Medium</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">2 - 5 مليون جنيه</span>
+                                <span class="lang-en">2 - 5 million EGP</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectBudget('premium')">
+                            <div class="preference-icon">💎</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">فاخر</span>
+                                <span class="lang-en">Premium</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">5 - 10 مليون جنيه</span>
+                                <span class="lang-en">5 - 10 million EGP</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectBudget('luxury')">
+                            <div class="preference-icon">👑</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">فاخر جداً</span>
+                                <span class="lang-en">Ultra Luxury</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">أكثر من 10 مليون جنيه</span>
+                                <span class="lang-en">More than 10 million EGP</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between mt-8">
+                        <button onclick="prevStep(2)" class="btn btn-secondary">
+                            <span class="lang-ar">رجوع</span>
+                            <span class="lang-en">Back</span>
+                        </button>
+                        <button onclick="nextStep(4)" class="btn btn-primary">
+                            <span class="lang-ar">متابعة</span>
+                            <span class="lang-en">Continue</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Location Preference -->
+                <div id="step4" class="concierge-step">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                        <span class="lang-ar">ما هو موقعك المفضل؟</span>
+                        <span class="lang-en">What is your preferred location?</span>
+                    </h3>
+                    
+                    <div class="preference-grid">
+                        <div class="preference-option" onclick="selectLocation('beachfront')">
+                            <div class="preference-icon">🌊</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">مطل على البحر</span>
+                                <span class="lang-en">Beachfront</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">إطلالة مباشرة على البحر</span>
+                                <span class="lang-en">Direct sea view</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectLocation('mountain')">
+                            <div class="preference-icon">⛰️</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">منطقة جبلية</span>
+                                <span class="lang-en">Mountain Area</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">إطلالة جبلية وبحرية</span>
+                                <span class="lang-en">Mountain and sea view</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectLocation('compound')">
+                            <div class="preference-icon">🏘️</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">مجمع سكني</span>
+                                <span class="lang-en">Residential Compound</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">مجمعات سكنية متكاملة</span>
+                                <span class="lang-en">Integrated residential compounds</span>
+                            </p>
+                        </div>
+                        
+                        <div class="preference-option" onclick="selectLocation('any')">
+                            <div class="preference-icon">📍</div>
+                            <h4 class="preference-title">
+                                <span class="lang-ar">أي موقع</span>
+                                <span class="lang-en">Any Location</span>
+                            </h4>
+                            <p class="preference-description">
+                                <span class="lang-ar">مرن في اختيار الموقع</span>
+                                <span class="lang-en">Flexible in location choice</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between mt-8">
+                        <button onclick="prevStep(3)" class="btn btn-secondary">
+                            <span class="lang-ar">رجوع</span>
+                            <span class="lang-en">Back</span>
+                        </button>
+                        <button onclick="generatePropertyRecommendations()" class="btn btn-primary">
+                            <span class="lang-ar">اطلب توصياتك</span>
+                            <span class="lang-en">Get Recommendations</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 5: AI Recommendations -->
+                <div id="step5" class="concierge-step">
+                    <div class="ai-loading" id="aiLoading">
+                        <div class="ai-loading-spinner"></div>
+                        <h3 class="ai-loading-text">
+                            <span class="lang-ar">جاري تحليل تفضيلاتك...</span>
+                            <span class="lang-en">Analyzing your preferences...</span>
+                        </h3>
+                        <p class="ai-loading-subtext">
+                            <span class="lang-ar">🤖 الذكاء الاصطناعي يجهز توصياتك العقارية المخصصة</span>
+                            <span class="lang-en">🤖 AI is preparing your personalized property recommendations</span>
+                        </p>
+                    </div>
+                    
+                    <div id="recommendationsContent" style="display: none;">
+                        <div class="ai-powered-badge">
+                            <i class="fas fa-robot"></i>
+                            <span class="lang-ar">توصيات عقارية مخصصة</span>
+                            <span class="lang-en">Smart Property Recommendations</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                            <span class="lang-ar">توصياتنا العقارية المخصصة لك</span>
+                            <span class="lang-en">Your Personalized Property Recommendations</span>
+                        </h3>
+                        
+                        <div id="propertyRecommendationsContainer" class="space-y-6">
+                            <!-- Property recommendations will be dynamically generated here -->
+                        </div>
+                        
+                        <div class="text-center mt-8">
+                            <button onclick="scrollToSection('booking')" class="btn btn-primary mr-4">
+                                <span class="lang-ar">احجز زيارة</span>
+                                <span class="lang-en">Book a Visit</span>
+                            </button>
+                            <button onclick="restartConcierge()" class="btn btn-secondary">
+                                <span class="lang-ar">ابدأ من جديد</span>
+                                <span class="lang-en">Start Over</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">معرض الصور</span>
+                    <span class="lang-en">Gallery</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">استكشف جمال وفخامة مشاريع Mega Services</span>
+                    <span class="lang-en">Explore the beauty and luxury of Mega Services projects</span>
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="منتجع فاخر" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>
+                                <span class="lang-ar">منتجعات فاخرة</span>
+                                <span class="lang-en">Luxury Resorts</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">تصميمات معمارية فريدة</span>
+                                <span class="lang-en">Unique architectural designs</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="تصميم داخلي" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>
+                                <span class="lang-ar">تصميم داخلي</span>
+                                <span class="lang-en">Interior Design</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">تشطيبات فاخرة</span>
+                                <span class="lang-en">Luxury finishes</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="مرافق ترفيهية" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>
+                                <span class="lang-ar">مرافق ترفيهية</span>
+                                <span class="lang-en">Recreational Facilities</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">مسابح ونوادي صحية</span>
+                                <span class="lang-en">Pools and health clubs</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                         alt="إطلالات بحرية" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>
+                                <span class="lang-ar">إطلالات بحرية</span>
+                                <span class="lang-en">Sea Views</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">مناظر خلابة للبحر الأحمر</span>
+                                <span class="lang-en">Stunning Red Sea views</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">آراء عملائنا</span>
+                    <span class="lang-en">Client Testimonials</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">لا تأخذ كلمتنا فقط - استمع إلى عملائنا الراضين</span>
+                    <span class="lang-en">Don't just take our word - hear from our satisfied clients</span>
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        <span class="lang-ar">تجربتي مع Mega Services كانت استثنائية. فريق محترف، جودة بناء متميزة، واهتمام بالتفاصيل جعل استثماري في مشروع LAVIA قراراً صائباً.</span>
+                        <span class="lang-en">My experience with Mega Services was exceptional. Professional team, outstanding build quality, and attention to detail made my investment in LAVIA project the right decision.</span>
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">س</div>
+                        <div class="author-info">
+                            <h4>سارة أحمد</h4>
+                            <p>
+                                <span class="lang-ar">مستثمر في مشروع LAVIA</span>
+                                <span class="lang-en">Investor in LAVIA Project</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        <span class="lang-ar">الشقة التي اشتريتها في Coral Bay تجاوزت توقعاتي. التصميم العصري، الإطلالة الخلابة، والخدمات المتكاملة جعلت العيش في العين السخنة تجربة رائعة.</span>
+                        <span class="lang-en">The apartment I bought in Coral Bay exceeded my expectations. Modern design, stunning views, and integrated services made living in Ain Sokhna a wonderful experience.</span>
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">م</div>
+                        <div class="author-info">
+                            <h4>محمد الخالد</h4>
+                            <p>
+                                <span class="lang-ar">مقيم في Coral Bay</span>
+                                <span class="lang-en">Resident in Coral Bay</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        <span class="lang-ar">خدمات إدارة الممتلكات التي تقدمها Mega Services متميزة. الاهتمام بالصيانة، المتابعة المستمرة، والتقارير الدورية جعلت استثماري العقاري آمناً ومربحاً.</span>
+                        <span class="lang-en">The property management services provided by Mega Services are outstanding. Attention to maintenance, continuous follow-up, and periodic reports made my real estate investment safe and profitable.</span>
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ل</div>
+                        <div class="author-info">
+                            <h4>لينا سمير</h4>
+                            <p>
+                                <span class="lang-ar">مستثمر عقاري</span>
+                                <span class="lang-en">Real Estate Investor</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">احجز استشارتك</span>
+                    <span class="lang-en">Book Your Consultation</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-ar">احجز استشارتك العقارية مع خبراء Mega Services</span>
+                    <span class="lang-en">Book your real estate consultation with Mega Services experts</span>
+                </p>
+            </div>
+            
+            <div class="booking-container">
+                <!-- Booking Information -->
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3>
+                            <span class="lang-ar">لماذا تختار Mega Services؟</span>
+                            <span class="lang-en">Why Choose Mega Services?</span>
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                                <span class="text-navy">
+                                    <span class="lang-ar">خبرة 15 عاماً في التطوير العقاري</span>
+                                    <span class="lang-en">15 Years of Real Estate Development Experience</span>
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                                <span class="text-navy">
+                                    <span class="lang-ar">أفضل مواقع العين السخنة</span>
+                                    <span class="lang-en">Best Locations in Ain Sokhna</span>
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                                <span class="text-navy">
+                                    <span class="lang-ar">جودة بناء وتشطيبات فاخرة</span>
+                                    <span class="lang-en">Luxury Build Quality & Finishes</span>
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                                <span class="text-navy">
+                                    <span class="lang-ar">خدمات ما بعد البيع متكاملة</span>
+                                    <span class="lang-en">Integrated After-Sales Services</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>
+                            <span class="lang-ar">اتصل بفريق المبيعات</span>
+                            <span class="lang-en">Contact Sales Team</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-ar">فريق المبيعات المخصص لدينا متاح لمساعدتك في اختيار العقار المناسب وتقديم أفضل العروض الاستثمارية.</span>
+                            <span class="lang-en">Our dedicated sales team is available to help you choose the right property and provide the best investment offers.</span>
+                        </p>
+                        <div class="space-y-2">
+                            <p class="text-navy">
+                                <strong>
+                                    <span class="lang-ar">هاتف:</span>
+                                    <span class="lang-en">Phone:</span>
+                                </strong> +20 123 456 7890
+                            </p>
+                            <p class="text-navy">
+                                <strong>
+                                    <span class="lang-ar">بريد إلكتروني:</span>
+                                    <span class="lang-en">Email:</span>
+                                </strong> sales@megaservices.com
+                            </p>
+                            <p class="text-navy">
+                                <strong>WhatsApp:</strong> +20 123 456 7890
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form">
+                    <form id="bookingForm" class="space-y-6">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">نوع الاستشارة</span>
+                                <span class="lang-en">Consultation Type</span>
+                            </label>
+                            <select name="service" class="form-select" required>
+                                <option value="">
+                                    <span class="lang-ar">اختر نوع الاستشارة</span>
+                                    <span class="lang-en">Select Consultation Type</span>
+                                </option>
+                                <option value="investment">
+                                    <span class="lang-ar">استشارة استثمارية</span>
+                                    <span class="lang-en">Investment Consultation</span>
+                                </option>
+                                <option value="property">
+                                    <span class="lang-ar">عرض عقاري</span>
+                                    <span class="lang-en">Property Viewing</span>
+                                </option>
+                                <option value="management">
+                                    <span class="lang-ar">إدارة الممتلكات</span>
+                                    <span class="lang-en">Property Management</span>
+                                </option>
+                                <option value="custom">
+                                    <span class="lang-ar">استشارة مخصصة</span>
+                                    <span class="lang-en">Custom Consultation</span>
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <span class="lang-ar">التاريخ المفضل</span>
+                                    <span class="lang-en">Preferred Date</span>
+                                </label>
+                                <input type="date" name="preferredDate" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <span class="lang-ar">الوقت المفضل</span>
+                                    <span class="lang-en">Preferred Time</span>
+                                </label>
+                                <select name="preferredTime" class="form-select" required>
+                                    <option value="morning">
+                                        <span class="lang-ar">الصباح (9 ص - 12 م)</span>
+                                        <span class="lang-en">Morning (9 AM - 12 PM)</span>
+                                    </option>
+                                    <option value="afternoon">
+                                        <span class="lang-ar">الظهر (12 م - 4 م)</span>
+                                        <span class="lang-en">Afternoon (12 PM - 4 PM)</span>
+                                    </option>
+                                    <option value="evening">
+                                        <span class="lang-ar">المساء (4 م - 7 م)</span>
+                                        <span class="lang-en">Evening (4 PM - 7 PM)</span>
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">المشروع المهتم به</span>
+                                <span class="lang-en">Project of Interest</span>
+                            </label>
+                            <select name="project" class="form-select">
+                                <option value="">
+                                    <span class="lang-ar">اختر المشروع</span>
+                                    <span class="lang-en">Select Project</span>
+                                </option>
+                                <option value="lavia">LAVIA</option>
+                                <option value="coral-bay">Coral Bay</option>
+                                <option value="royal-oasis">Royal Oasis</option>
+                                <option value="any">
+                                    <span class="lang-ar">أي مشروع</span>
+                                    <span class="lang-en">Any Project</span>
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الاسم الكامل</span>
+                                <span class="lang-en">Full Name</span>
+                            </label>
+                            <input type="text" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">البريد الإلكتروني</span>
+                                <span class="lang-en">Email</span>
+                            </label>
+                            <input type="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">رقم الهاتف</span>
+                                <span class="lang-en">Phone Number</span>
+                            </label>
+                            <input type="tel" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">ملاحظات إضافية</span>
+                                <span class="lang-en">Additional Notes</span>
+                            </label>
+                            <textarea name="notes" class="form-textarea" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">
+                            <span class="lang-ar">إرسال طلب الاستشارة</span>
+                            <span class="lang-en">Submit Consultation Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: white;">
+                    <span class="lang-ar">اتصل بنا</span>
+                    <span class="lang-en">Contact Us</span>
+                </h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">
+                    <span class="lang-ar">تواصل مع فريقنا لأي استفسارات</span>
+                    <span class="lang-en">Get in touch with our team for any inquiries</span>
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>
+                                <span class="lang-ar">العنوان</span>
+                                <span class="lang-en">Address</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">طريق البحر الأحمر، العين السخنة، مصر</span>
+                                <span class="lang-en">Red Sea Road, Ain Sokhna, Egypt</span>
+                            </p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">📞</div>
+                            <h3>
+                                <span class="lang-ar">هاتف</span>
+                                <span class="lang-en">Phone</span>
+                            </h3>
+                            <p>+20 123 456 7890</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">✉️</div>
+                            <h3>
+                                <span class="lang-ar">بريد إلكتروني</span>
+                                <span class="lang-en">Email</span>
+                            </h3>
+                            <p>info@megaservices.com</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">⏰</div>
+                            <h3>
+                                <span class="lang-ar">ساعات العمل</span>
+                                <span class="lang-en">Working Hours</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">9 ص - 7 م طوال الأسبوع</span>
+                                <span class="lang-en">9 AM - 7 PM All Week</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="contact-card">
+                        <div class="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-4xl text-gold mb-3">🗺️</div>
+                                <p class="text-white">
+                                    <span class="lang-ar">خريطة تفاعلية</span>
+                                    <span class="lang-en">Interactive Map</span>
+                                </p>
+                                <p class="text-gray-400 text-sm mt-1">
+                                    <span class="lang-ar">العين السخنة، مصر</span>
+                                    <span class="lang-en">Ain Sokhna, Egypt</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form class="space-y-6">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الاسم الكامل</span>
+                                <span class="lang-en">Full Name</span>
+                            </label>
+                            <input type="text" name="contact-name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">البريد الإلكتروني</span>
+                                <span class="lang-en">Email</span>
+                            </label>
+                            <input type="email" name="contact-email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الموضوع</span>
+                                <span class="lang-en">Subject</span>
+                            </label>
+                            <input type="text" name="contact-subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="lang-ar">الرسالة</span>
+                                <span class="lang-en">Message</span>
+                            </label>
+                            <textarea name="contact-message" class="form-textarea min-h-[150px]" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">
+                            <span class="lang-ar">إرسال الرسالة</span>
+                            <span class="lang-en">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div>
+                    <div class="footer-logo">
+                        <img src="https://i.ibb.co/67c2rfPJ/IMG-20251023-WA0002.jpg" 
+                             alt="Mega Services" 
+                             class="logo-img">
+                        <div class="logo-text">MEGA SERVICES</div>
+                    </div>
+                    <p class="footer-description">
+                        <span class="lang-ar">شركة Mega Services للاستثمار والتطوير العقاري - نقدم مشاريع سكنية وفندقية فاخرة في أفضل مواقع العين السخنة منذ 2008.</span>
+                        <span class="lang-en">Mega Services Real Estate Investment & Development - We provide luxury residential and hotel projects in the best locations of Ain Sokhna since 2008.</span>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">روابط سريعة</span>
+                        <span class="lang-en">Quick Links</span>
+                    </h3>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                        <a href="#projects" class="footer-link">
+                            <span class="lang-ar">مشاريعنا</span>
+                            <span class="lang-en">Our Projects</span>
+                        </a>
+                        <a href="lavia.html" class="footer-link">
+                            <span class="lang-ar">LAVIA</span>
+                            <span class="lang-en">LAVIA</span>
+                        </a>
+                        <a href="#services" class="footer-link">
+                            <span class="lang-ar">خدماتنا</span>
+                            <span class="lang-en">Services</span>
+                        </a>
+                        <a href="#contact" class="footer-link">
+                            <span class="lang-ar">اتصل بنا</span>
+                            <span class="lang-en">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">المشاريع</span>
+                        <span class="lang-en">Projects</span>
+                    </h3>
+                    <div class="footer-links">
+                        <a href="lavia.html" class="footer-link">
+                            <span class="lang-ar">LAVIA</span>
+                            <span class="lang-en">LAVIA</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">Coral Bay</span>
+                            <span class="lang-en">Coral Bay</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">Royal Oasis</span>
+                            <span class="lang-en">Royal Oasis</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">المشاريع القادمة</span>
+                            <span class="lang-en">Upcoming Projects</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="footer-heading">
+                        <span class="lang-ar">الدعم</span>
+                        <span class="lang-en">Support</span>
+                    </h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">الأسئلة الشائعة</span>
+                            <span class="lang-en">FAQ</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">سياسة الإلغاء</span>
+                            <span class="lang-en">Cancellation Policy</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">الشروط والأحكام</span>
+                            <span class="lang-en">Terms & Conditions</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-ar">سياسة الخصوصية</span>
+                            <span class="lang-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>
+                    © 2024 Mega Services. 
+                    <span class="lang-ar">جميع الحقوق محفوظة.</span>
+                    <span class="lang-en">All rights reserved.</span>
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">
+                        <span class="lang-ar">سياسة الخصوصية</span>
+                        <span class="lang-en">Privacy Policy</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">
+                        <span class="lang-ar">شروط الخدمة</span>
+                        <span class="lang-en">Terms of Service</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <button onclick="scrollToSection('booking')" class="floating-btn booking-btn">
+            <i class="fas fa-calendar-alt"></i>
+        </button>
+        <button onclick="scrollToSection('concierge')" class="floating-btn concierge-btn">
+            <i class="fas fa-robot"></i>
+        </button>
+        <button onclick="openWhatsApp()" class="floating-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        <button onclick="makeCall()" class="floating-btn call-btn">
+            <i class="fas fa-phone"></i>
+        </button>
+        <button onclick="scrollToTop()" class="floating-btn top-btn">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <script>
+        // ===== CONFIGURATION =====
+        const CONFIG = {
+            GEMINI_API_URL: 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent',
+            API_KEY: 'AIzaSyAHZySyVX3SBqqfvPNtfb_y8-3FbTjUGJo',
+            APP_VERSION: '3.0.0'
+        };
+
+        // ===== STATE MANAGEMENT =====
+        class AppState {
+            constructor() {
+                this.currentUser = null;
+                this.bookings = [];
+                this.language = 'ar';
+                this.conciergeData = {
+                    propertyType: '',
+                    budget: '',
+                    location: '',
+                    checkIn: '',
+                    checkOut: ''
+                };
+            }
+
+            init() {
+                this.loadFromStorage();
+                this.setupEventListeners();
+                this.initializeComponents();
+                this.updateUI();
+            }
+
+            loadFromStorage() {
+                try {
+                    this.currentUser = JSON.parse(localStorage.getItem('megaServices_user')) || null;
+                    this.bookings = JSON.parse(localStorage.getItem('megaServices_bookings')) || [];
+                    this.language = localStorage.getItem('megaServices_language') || 'ar';
+                } catch (error) {
+                    console.error('Error loading from storage:', error);
+                    this.resetStorage();
+                }
+            }
+
+            saveToStorage() {
+                try {
+                    if (this.currentUser) {
+                        localStorage.setItem('megaServices_user', JSON.stringify(this.currentUser));
+                    }
+                    localStorage.setItem('megaServices_bookings', JSON.stringify(this.bookings));
+                    localStorage.setItem('megaServices_language', this.language);
+                } catch (error) {
+                    console.error('Error saving to storage:', error);
+                }
+            }
+
+            setupEventListeners() {
+                // Language toggle
+                document.getElementById('languageToggle').addEventListener('click', () => {
+                    this.switchLanguage(this.language === 'ar' ? 'en' : 'ar');
+                });
+
+                // Navigation scroll effect
+                window.addEventListener('scroll', () => {
+                    const navbar = document.getElementById('navbar');
+                    const scrolled = window.scrollY > 50;
+                    navbar.classList.toggle('scrolled', scrolled);
+                    
+                    // Show/hide scroll to top button
+                    const topBtn = document.querySelector('.top-btn');
+                    topBtn.classList.toggle('show', window.scrollY > 500);
+                });
+
+                // Mobile menu
+                document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+                    this.toggleMobileMenu();
+                });
+
+                // Form submissions
+                this.setupFormHandlers();
+            }
+
+            setupFormHandlers() {
+                // Booking form
+                const bookingForm = document.getElementById('bookingForm');
+                if (bookingForm) {
+                    bookingForm.addEventListener('submit', (e) => this.handleBooking(e));
+                }
+
+                // Contact form
+                const contactForm = document.querySelector('.contact-form form');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', (e) => this.handleContact(e));
+                }
+            }
+
+            initializeComponents() {
+                this.initConcierge();
+            }
+
+            updateUI() {
+                this.updateLanguage();
+            }
+
+            // ===== LANGUAGE SYSTEM =====
+            switchLanguage(lang) {
+                this.language = lang;
+                this.saveToStorage();
+                
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                document.documentElement.lang = lang;
+                
+                if (lang === 'en') {
+                    document.body.classList.add('en');
+                } else {
+                    document.body.classList.remove('en');
+                }
+                
+                this.showNotification(
+                    lang === 'ar' ? 'تم التبديل إلى العربية' : 'Switched to English',
+                    'success'
+                );
+            }
+
+            updateLanguage() {
+                this.switchLanguage(this.language);
+            }
+
+            // ===== AI CONCIERGE SYSTEM =====
+            initConcierge() {
+                // Reset concierge data
+                this.conciergeData = {
+                    propertyType: '',
+                    budget: '',
+                    location: '',
+                    checkIn: '',
+                    checkOut: ''
+                };
+            }
+
+            // ===== BOOKING SYSTEM =====
+            async handleBooking(e) {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                
+                const bookingData = {
+                    id: Date.now().toString(),
+                    consultationType: formData.get('service'),
+                    preferredDate: formData.get('preferredDate'),
+                    preferredTime: formData.get('preferredTime'),
+                    project: formData.get('project'),
+                    notes: formData.get('notes'),
+                    guestInfo: {
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        phone: formData.get('phone')
+                    },
+                    status: 'pending',
+                    createdAt: new Date().toISOString()
+                };
+
+                this.addBooking(bookingData);
+                e.target.reset();
+                
+                this.showNotification(
+                    this.language === 'ar' ? 'تم إرسال طلب الاستشارة بنجاح!' : 'Consultation request sent successfully!',
+                    'success'
+                );
+            }
+
+            async handleContact(e) {
+                e.preventDefault();
+                
+                this.showNotification(
+                    this.language === 'ar' ? 'تم إرسال رسالتك بنجاح!' : 'Your message has been sent successfully!',
+                    'success'
+                );
+                e.target.reset();
+            }
+
+            addBooking(booking) {
+                this.bookings.unshift(booking);
+                this.saveToStorage();
+            }
+
+            // ===== UTILITY METHODS =====
+            toggleMobileMenu() {
+                const nav = document.querySelector('.desktop-nav');
+                const isOpen = nav.style.display === 'flex';
+                
+                if (isOpen) {
+                    nav.style.display = 'none';
+                } else {
+                    nav.style.display = 'flex';
+                    nav.style.flexDirection = 'column';
+                    nav.style.position = 'absolute';
+                    nav.style.top = '100%';
+                    nav.style.left = '0';
+                    nav.style.right = '0';
+                    nav.style.background = 'rgba(10, 35, 66, 0.95)';
+                    nav.style.padding = '1rem';
+                    nav.style.gap = '1rem';
+                }
+                
+                // Animate hamburger icon
+                const spans = document.querySelectorAll('.mobile-menu-btn span');
+                if (isOpen) {
+                    spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'rotate(0) translate(0, 0)';
+                } else {
+                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                }
+            }
+
+            showNotification(message, type = 'info', duration = 5000) {
+                // Create and show notification
+                console.log(`[${type.toUpperCase()}] ${message}`);
+                
+                // In a real implementation, you would show a visual notification
+                // For now, we'll use a simple alert
+                alert(message);
+            }
+        }
+
+        // ===== CONCIERGE FUNCTIONS =====
+        let currentConciergeStep = 1;
+
+        function nextStep(step) {
+            document.querySelectorAll('.concierge-step').forEach(s => {
+                s.classList.remove('active');
+            });
+            
+            const targetStep = document.getElementById(`step${step}`);
+            if (targetStep) {
+                targetStep.classList.add('active');
+                currentConciergeStep = step;
+            }
+        }
+
+        function prevStep(step) {
+            nextStep(step);
+        }
+
+        function selectPreference(preference) {
+            appState.conciergeData.propertyType = preference;
+            
+            // Remove selection from all options
+            document.querySelectorAll('.preference-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Add selection to clicked option
+            event.currentTarget.classList.add('selected');
+        }
+
+        function selectBudget(budget) {
+            appState.conciergeData.budget = budget;
+            
+            // Remove selection from all options
+            document.querySelectorAll('.preference-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Add selection to clicked option
+            event.currentTarget.classList.add('selected');
+        }
+
+        function selectLocation(location) {
+            appState.conciergeData.location = location;
+            
+            // Remove selection from all options
+            document.querySelectorAll('.preference-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Add selection to clicked option
+            event.currentTarget.classList.add('selected');
+        }
+
+        async function generatePropertyRecommendations() {
+            // Show AI loading state
+            const aiLoading = document.getElementById('aiLoading');
+            const recommendationsContent = document.getElementById('recommendationsContent');
+            
+            if (aiLoading && recommendationsContent) {
+                aiLoading.style.display = 'block';
+                recommendationsContent.style.display = 'none';
+            }
+            
+            nextStep(5);
+            
+            try {
+                console.log('🚀 Starting AI property recommendation generation...');
+                
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Hide loading, show content
+                if (aiLoading && recommendationsContent) {
+                    aiLoading.style.display = 'none';
+                    recommendationsContent.style.display = 'block';
+                }
+                
+                // Generate mock recommendations
+                const mockResult = generateMockRecommendations(appState.conciergeData);
+                displayPropertyRecommendations(mockResult.recommendations);
+                
+                // Show success notification
+                appState.showNotification(
+                    appState.language === 'ar' ? 
+                    'تم توليد توصيات عقارية مخصصة!' :
+                    'Personalized property recommendations generated!',
+                    'success'
+                );
+                
+            } catch (error) {
+                console.error('❌ Error generating property recommendations:', error);
+                
+                // Hide loading, show content even on error
+                if (aiLoading && recommendationsContent) {
+                    aiLoading.style.display = 'none';
+                    recommendationsContent.style.display = 'block';
+                }
+                
+                appState.showNotification(
+                    appState.language === 'ar' ? 
+                    'حدث خطأ في توليد التوصيات' :
+                    'Error generating recommendations',
+                    'error'
+                );
+                
+                // Fallback to mock data
+                const mockResult = generateMockRecommendations(appState.conciergeData);
+                displayPropertyRecommendations(mockResult.recommendations);
+            }
+        }
+
+        function generateMockRecommendations(preferences = {}) {
+            return {
+                recommendations: [
+                    {
+                        project: "LAVIA",
+                        propertyType: "شقة",
+                        title: { 
+                            ar: "✨ شقة ديلوكس بإطلالة بحرية في LAVIA",
+                            en: "✨ Deluxe Apartment with Sea View in LAVIA"
+                        },
+                        description: { 
+                            ar: "شقة فاخرة في مشروع LAVيا مع إطلالة بانورامية ساحرة على البحر الأحمر. تتميز بتصميم عصري، 3 غرف نوم، صالة واسعة، ومطبخ مفتوح.",
+                            en: "Luxury apartment in LAVIA project with stunning panoramic views of the Red Sea. Features modern design, 3 bedrooms, spacious living room, and open kitchen."
+                        },
+                        price: { 
+                            ar: "4,200,000 جنيه مصري",
+                            en: "4,200,000 EGP"
+                        },
+                        size: "120 م²",
+                        features: ["إطلالة بحرية", "3 غرف نوم", "تشطيب سوبر لوكس", "خدمات فندقية"],
+                        location: "العين السخنة - البحر الأحمر"
+                    },
+                    {
+                        project: "Coral Bay",
+                        propertyType: "فيلا",
+                        title: { 
+                            ar: "🏡 فيلا مستقلة في Coral Bay",
+                            en: "🏡 Independent Villa in Coral Bay"
+                        },
+                        description: { 
+                            ar: "فيلا فاخرة مستقلة في مجمع Coral Bay مع حديقة خاصة وحمام سباحة. تصميم معماري فريد، 4 غرف نوم، صالتان، ومطبخ راقي.",
+                            en: "Luxury independent villa in Coral Bay compound with private garden and swimming pool. Unique architectural design, 4 bedrooms, 2 living rooms, and elegant kitchen."
+                        },
+                        price: { 
+                            ar: "8,500,000 جنيه مصري",
+                            en: "8,500,000 EGP"
+                        },
+                        size: "280 م²",
+                        features: ["حديقة خاصة", "حمام سباحة", "4 غرف نوم", "مواقف سيارات"],
+                        location: "خليج العين السخنة"
+                    }
+                ]
+            };
+        }
+
+        function displayPropertyRecommendations(recommendations) {
+            const container = document.getElementById('propertyRecommendationsContainer');
+            if (!container) return;
+            
+            container.innerHTML = recommendations.map((rec, index) => `
+                <div class="bg-white bg-opacity-5 rounded-xl p-6 border border-white border-opacity-10" style="animation-delay: ${index * 100}ms">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="bg-gold text-navy px-2 py-1 rounded text-sm font-bold">${rec.project}</span>
+                                <span class="text-gold text-sm">${rec.propertyType}</span>
+                            </div>
+                            <h4 class="font-bold text-lg text-white mb-2">
+                                ${appState.language === 'ar' ? rec.title.ar : rec.title.en}
+                            </h4>
+                            <p class="text-gray-300 mb-3 leading-relaxed">
+                                ${appState.language === 'ar' ? rec.description.ar : rec.description.en}
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                ${rec.features.map(feature => `
+                                    <span class="bg-white bg-opacity-10 text-white px-3 py-1 rounded text-sm">${feature}</span>
+                                `).join('')}
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gold font-bold text-lg">
+                                    ${appState.language === 'ar' ? rec.price.ar : rec.price.en}
+                                </span>
+                                <span class="text-sm text-gray-400">${rec.size}</span>
+                            </div>
+                            <div class="text-sm text-gray-400 mt-2">${rec.location}</div>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button onclick="bookPropertyRecommendation('${rec.project}', '${rec.propertyType}')" 
+                                class="bg-gold hover:bg-yellow-600 text-navy px-4 py-2 rounded-lg text-sm transition-all flex items-center gap-2 font-bold">
+                            <span>${appState.language === 'ar' ? 'احجز زيارة' : 'Book a Visit'}</span>
+                            <span>${appState.language === 'ar' ? '←' : '→'}</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function bookPropertyRecommendation(project, propertyType) {
+            scrollToSection('booking');
+            
+            // Set the project in the booking form
+            const projectSelect = document.querySelector('#bookingForm select[name="project"]');
+            if (projectSelect) {
+                projectSelect.value = project.toLowerCase().replace(' ', '-');
+            }
+            
+            appState.showNotification(
+                appState.language === 'ar' ? 
+                `تم اختيار ${propertyType} في ${project} - سيتم التواصل معك قريباً` :
+                `${propertyType} in ${project} selected - we will contact you soon`,
+                'success'
+            );
+        }
+
+        function restartConcierge() {
+            appState.conciergeData = {
+                propertyType: '',
+                budget: '',
+                location: '',
+                checkIn: '',
+                checkOut: ''
+            };
+            
+            document.querySelectorAll('.preference-option').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            
+            nextStep(1);
+        }
+
+        // ===== GLOBAL FUNCTIONS =====
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const offset = 80;
+                const elementPosition = element.offsetTop - offset;
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function openWhatsApp() {
+            window.open('https://wa.me/+2001003764674', '_blank');
+        }
+
+        function makeCall() {
+            window.open('tel:+201003764674');
+        }
+
+        // ===== INITIALIZATION =====
+        const appState = new AppState();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set minimum dates for date inputs
+            const today = new Date().toISOString().split('T')[0];
+            document.querySelectorAll('input[type="date"]').forEach(input => {
+                input.min = today;
+            });
+
+            // Initialize the application
+            appState.init();
+
+            console.log('🚀 Mega Services Main Page Loaded Successfully!');
+            console.log('🤖 Gemini AI API: ' + (CONFIG.API_KEY ? '✅ Connected' : '❌ Not Configured'));
+        });
+
+        // Export for global access
+        window.appState = appState;
+        window.scrollToSection = scrollToSection;
+        window.scrollToTop = scrollToTop;
+        window.openWhatsApp = openWhatsApp;
+        window.makeCall = makeCall;
+        window.nextStep = nextStep;
+        window.prevStep = prevStep;
+        window.selectPreference = selectPreference;
+        window.selectBudget = selectBudget;
+        window.selectLocation = selectLocation;
+        window.generatePropertyRecommendations = generatePropertyRecommendations;
+        window.bookPropertyRecommendation = bookPropertyRecommendation;
+        window.restartConcierge = restartConcierge;
+    </script>
+</body>
+</html>
